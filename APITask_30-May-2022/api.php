@@ -14,14 +14,5 @@ $da = json_decode($data, true);
 $name=$da['name'];
 $age=$da['age'];
 $query="UPDATE `info` SET age='$age' WHERE name='$name'";
-if(mysqli_query($con,$query))
-{
-
-    echo '<script>
-    alert("you updated your age successfully");
-    </script>';
-}
-else
-'<script>
-    alert("you updated your age successfully");
-    </script>';?>
+mysqli_query($con,$query);
+?>

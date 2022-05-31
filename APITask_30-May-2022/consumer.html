@@ -22,13 +22,15 @@
 
             let data = { name: "Ahmad", age: NewAge.value };
 
-            fetch("api.php", {
+         fetch("api.php", {
                 method: 'POST',
                 credentials: 'same-origin',
                 body: JSON.stringify(data),
                 headers: { 'Content-Type': 'application/json' }
             });
+             
         }
+       
 
     </script>
 </body>
